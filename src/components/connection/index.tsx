@@ -8,6 +8,8 @@ import { CharacterAvatar } from "@crossbell/ui";
 
 export function Connection() {
   const account = useConnectedAccount();
+  console.log(account);
+
   const characterName = extractCharacterName(account?.character);
   const address = account?.type === "email" ? account.email : account?.address;
 

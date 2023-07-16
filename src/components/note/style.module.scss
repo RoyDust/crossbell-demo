@@ -1,0 +1,71 @@
+.box {
+  width: 750px;
+  margin: 0 auto;
+  .postNote {
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .textInput {
+      width: 600px;
+      border-radius: 10px;
+      outline: none;
+      height: 36px;
+      padding: 10px;
+    }
+    .sendBnt {
+      margin-left: 10px;
+      width: 100px;
+      // border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: rgb(167, 191, 248);
+    }
+  }
+  .noteWrapper {
+    margin-top: 30px;
+    width: 100%;
+    // background-color: #efefef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .noteBox {
+      border: 1px solid #eee;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 10px;
+      width: 100%;
+      min-height: 120px;
+      background-color: seashell;
+      word-break: break-all;
+      .noteHeader {
+        display: flex;
+        align-items: center;
+        .userNameBox {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          .userId {
+            font-size: 0.8em;
+            color: #ccc;
+          }
+        }
+        .postTime {
+          margin-left: 10px;
+          align-self: flex-end;
+          color: #ccc;
+          font-size: 0.8em;
+        }
+      }
+      .content {
+        margin-top: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
